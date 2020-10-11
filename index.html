@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+  
+<head>
+  <meta charset=utf-8 />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuckshop 2.0</title>
+
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="icon" href="icon.png">
+  <script src="stl_viewer.min.js"></script>
+ 
+</head>
+<body>
+    <div style="background-color: #fca649; margin: 0px; padding: 5px;" class="sticky">
+      <h1 style="margin: 0px; color: white;">
+        Tuckshop 2.0
+        <span style=" float: right;">
+          <button style="margin: 0px; color: white; vertical-align: middle; margin-right: 30px;" class="button" id="logout">Login</button>
+        </span>
+        
+      </h1>
+      
+    </div>
+
+    <br>
+      <div id ='content' style="margin-top: 30px; margin-left: 10px;">
+      <div id="upload" class="border" >
+        <h3 id="title" style="margin: 5px;">Upload a file:</h1>
+          <p class="mar">File: <input type="file" id="file" name="file"/></p>
+          <p class="mar">Description: <br><textarea id="description"></textarea></p> 
+          <button id="saveButton" class="mar button orange">Submit</button>
+      </div> 
+    <br>
+    <div class="border" id="queue_div">
+      <h3 style="margin: 5px;">Printer Queue:</h3>
+      <div id="queue"></div>
+    </div>
+    </div>
+    <!-- <span id="linkbox"></span> -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+    
+
+    <script script src="main.js"></script>
+  </body>
+</html>
